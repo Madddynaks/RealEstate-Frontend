@@ -15,6 +15,9 @@ const poppins = Poppins({
 });
 
 export default function Architecture() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   const [tab, setTab] = useState("Exterior");
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState(0);

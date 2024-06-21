@@ -1,4 +1,6 @@
+'use client'
 import React from "react";
+import { useEffect } from "react";
 import { Oswald } from "next/font/google";
 import { Poppins } from "next/font/google";
 import Narrow from "../Common/Narrow";
@@ -13,6 +15,9 @@ const poppins = Poppins({
 });
 
 export default function Features() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
     <Narrow>
       <div className="mt-16 max-lg:mt-5 max-lg:px-3">

@@ -1,5 +1,6 @@
-
+'use client'
 import React from "react";
+import { useEffect } from "react";
 import { Oswald } from "next/font/google";
 import { Poppins } from "next/font/google";
 import Narrow from "../Common/Narrow";
@@ -11,6 +12,9 @@ const oswald = Oswald({ subsets: ["latin"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"] });
 
 const Card = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   return (
     <div className="grid grid-cols-4 gap-5 max-lg:grid-cols-2 gap-y-0">
       <div data-aos="zoom-in-right">

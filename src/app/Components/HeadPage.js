@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { useClient } from "next/client";
+import { useEffect } from "react";
 import { Poppins } from "next/font/google";
 import { Oswald } from "next/font/google";
 import Narrow from "../Common/Narrow";
@@ -14,6 +15,9 @@ const poppins = Poppins({
 const oswald = Oswald({ subsets: ["latin"] });
 
 export default function HeadPage() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const toggleMenu = () => {
