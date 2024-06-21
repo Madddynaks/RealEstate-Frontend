@@ -9,6 +9,13 @@ First, run the development server:
 https://github.com/Madddynaks/RealEstate-Frontend/assets/107129255/f296d4d8-a8b0-47f9-827b-a56d899e82f7
 
 
+
+
+
+https://github.com/Madddynaks/RealEstate-Frontend/assets/107129255/2ca72c6a-0c5b-4f9d-bbeb-a4a5baffe688
+
+
+
 ```bash
 npm install
 
