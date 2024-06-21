@@ -4,6 +4,11 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
+
+## Video Of Working Project
+https://github.com/Madddynaks/RealEstate-Frontend/assets/107129255/f296d4d8-a8b0-47f9-827b-a56d899e82f7
+
+
 ```bash
 npm install
 
